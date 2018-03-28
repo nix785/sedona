@@ -1,0 +1,29 @@
+.haschteg {
+  width: 280px;
+  margin:  0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  &__link{
+    text-decoration: none;
+    color:$color_text_primary;
+  }
+}
+
+@media($tablet-width){
+  .haschteg {
+	margin: 0;
+	text-align: left;
+	padding-top: 11px;
+	padding-left: 15px;
+	width: 220px;
+}
+}
+
+@media($desktop-width){
+  .haschteg{
+    text-align: center;
+    width: 185px;
+  }
+}

@@ -1,0 +1,31 @@
+.logo {
+  width: 150px;
+  height: 83px;
+  padding-left: 103px;
+  z-index: 10;
+  transition: 1s;
+  & a {
+    text-decoration: none;
+  }
+  
+  .icon-logotyle-mobile:hover{
+    font-size: 6rem;
+    margin-left: -11px;
+  }
+  
+  &__title{
+    display: none;
+  }
+  
+}
+
+@media($tablet-width){
+  .logo{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    top: 0;
+    padding: 0;
+    margin-left: -50px;
+  }
+}

@@ -1,0 +1,27 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: $background_color;
+  color: $color_text_primary;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color_text_primary;
+  font-weight: bold;
+}
+
+h3 {
+  color: $color_text_secondary;
+  font-weight: bold;
+}
+
+h4 {
+  color: #000000;
+  font-weight: bold;
+}

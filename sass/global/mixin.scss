@@ -1,0 +1,36 @@
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin flexbox($direction, $wrap, $align){
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $align;
+}
+
+@mixin reset_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin container {
+    width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @media ($tablet-width) {
+        width: 768px;
+        padding: 0 45px;
+    }
+
+    @media ($desktop-width) {
+        width: 1200px;
+           padding: 0 60px;
+
+    }
+}

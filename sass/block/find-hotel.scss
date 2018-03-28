@@ -1,0 +1,112 @@
+.find-hotel {
+  @include container;
+  padding-top: 35px;
+  margin-bottom: 50px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 33px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  &__text {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__button {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 280px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    border: none;
+    font-size: 21px;
+    cursor: pointer;
+    background-color: #81b3d2;
+    text-transform: uppercase;
+    color: $color_text_secondary;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 5px -5px #39cde9;
+  transition: box-shadow 2s;
+  
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    height: 0;
+    padding-bottom: 200%;
+    background: darken(#39cde9, 1%);
+    mix-blend-mode: color-burn;
+    top: 0;
+    z-index: -1;
+    border-radius: 230px;
+    transition: transform 2.5s, background 6s;
+  }
+  
+  &:after {
+    // border-top-right-radius: 40%;
+    // border-bottom-left-radius: 40%;
+    transform: translate3d(-5%,6em,0) rotate(-45deg);
+  }
+  
+  &:before {
+    // border-bottom-right-radius: 40%;
+    // border-top-left-radius: 40%;
+    transform: translate3d(5%,6em,0) rotate(0deg);
+  }
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 50px -5px darken(#39cde9, 50%);
+    
+    &:before,
+    &:after {
+      transform: translate3d(0,-5em,0) rotate(180deg);
+      background: darken(#39cde9, 20%);
+    }
+  }
+  }
+  &__button:disabled{
+    background-color: #e5e5e5;
+  }
+  
+}
+
+@media($tablet-width) {
+  .find-hotel {
+    padding: 47px 54px;
+    margin-bottom: 0;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 29px;
+    }
+    &__text {
+      display: block;
+      width: 441px;
+      margin: 0 auto;
+      font-size: 14px;
+      margin-bottom: 38px;
+    }
+    &__button{
+      display: block;
+      margin: 0 auto;
+      width: 458px;
+    }
+  }
+}
+
+@media($desktop-width){
+  .find-hotel{
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,92 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: #ffffff;
+}
+
+.icon-htmlacademy {
+  font-size: 2rem;
+  width: (27/34)*1em;
+}
+
+.icon-icon-burger {
+  font-size: 3rem;
+  width: (40/35)*1em;
+}
+
+.icon-icon-cross {
+  font-size: 1rem;
+  width: (23/22)*1em;
+}
+
+.icon-icon-facebook {
+  font-size: 1rem;
+  width: (9/18)*1em;
+}
+
+.icon-icon-gift {
+  font-size: 3rem;
+  width: (32/38)*1em;
+}
+
+.icon-icon-house {
+  font-size: 3rem;
+  width: (39/37)*1em;
+}
+
+.icon-icon-menu {
+  font-size: 1rem;
+  width: (23/21)*1em;
+}
+
+.icon-icon-twitter {
+  font-size: 1rem;
+  width: (18/14)*1em;
+}
+
+.icon-icon-youtube {
+  font-size: 1rem;
+  width: (20/14)*1em;
+}
+
+.icon-intro-triangle {
+  font-size: 1rem;
+  width: (320/57)*1em;
+}
+
+.icon-logotyle-mobile {
+  font-size: 5rem;
+  width: (102/83)*1em;
+  transition: 0.5s;
+}
+
+.icon-sprite {
+  font-size: 1rem;
+  width: (0)*1em;
+}
+
+.icon-text-index {
+  font-size: 13rem;
+  width: (282/214)*1em;
+}
+
+@media($tablet-width) {
+  .icon-text-index {
+    font-size: 22rem;
+  }
+  .icon-icon-gift {
+    font-size: 4.5rem;
+  }
+  .icon-icon-house {
+    font-size: 4.5rem;
+  }
+  .icon-icon-burger {
+    font-size: 4.5rem;
+  }
+}
+
+.icon-whitecopy {
+  font-size: 1rem;
+  width: (320/37)*1em;
+}

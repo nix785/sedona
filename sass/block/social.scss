@@ -1,0 +1,48 @@
+.social{
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @include flexbox(row, nowrap, space-between);
+  
+  &__link{
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: #81b3d2;
+    text-align: center;
+    line-height: 55px;
+  }
+  
+   &__link:hover {
+    background-color: #669ec0;
+  }
+
+  &__link:active {
+    background-color: #5496bd;
+    }
+  
+  &__link:active .icon {
+    opacity: 0.3;
+    }
+  
+}
+@media($tablet-width){
+  .social{
+    justify-content: flex-start;
+ 
+  &__link{
+    margin-right: 6px;
+  }
+  
+    &__link:last-child{
+    margin-right: 0;
+  }
+  }}
+
+@media($desktop-width){
+  .social{
+    width: 580px;
+    justify-content: center;
+  }
+}
