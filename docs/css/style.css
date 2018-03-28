@@ -301,7 +301,7 @@ h4 {
   .features__wrapper-title::before {
     content: "";
     position: absolute;
-    bottom: -62px;
+    bottom: -61px;
     left: 0;
     width: 320px;
     height: 58px;
